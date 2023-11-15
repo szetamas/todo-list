@@ -31,7 +31,7 @@ if( is_numeric($id) && $id >= 0 ) {
       if ( isset($datas['completed']) && strlen($datas['completed']) > 0 ) {
         $stmt->bindParam(':completed', $datas['completed']);
       }
-      
+
       $stmt->bindParam(':currentTime',  date('Y-m-d H:i:s'));
       $stmt->bindParam(':id', $id);
       $stmt->execute();
@@ -62,7 +62,7 @@ if( is_numeric($id) && $id >= 0 ) {
       }
     } catch(PDOException $error) {
       http_response_code(500);
-      echo json_encode(['error' => $error]);
+      echo json_encode(['error' => 'Something went wrong']);
       return;
     }
   } else {
