@@ -16,6 +16,9 @@ switch ($method) {
   case 'POST':
     include_once '../funcs/addTodo.php';
     break;
+  case 'PATCH':
+    include_once '../funcs/modifyTodoById.php';
+    break;
   default:
     http_response_code(400);
     echo json_encode(['error' => 'wrong request method']);
