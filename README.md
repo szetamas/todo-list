@@ -6,7 +6,8 @@
   <li>POST http://127.0.0.1/todo-list/api/items.php<br>
   {"name":"make something", "description":"sometext"}<br>
   {"name":"make anything"}</li>
-  <li>PATCH http://127.0.0.1/todo-list/todo-list/api/items.php?id=1<br>
+  <li>DELETE http://127.0.0.1/todo-list/api/items.php?id=1</li>
+  <li>PATCH http://127.0.0.1/todo-list/api/items.php?id=1<br>
   {"name": "make something", "description": "sometext", "completed": "0"}<br>
   {"description": "some other text", "completed": "0"}<br>
   {"completed": "1"}</li>

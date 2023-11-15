@@ -16,6 +16,9 @@ switch ($method) {
   case 'POST':
     include_once '../funcs/addTodo.php';
     break;
+  case 'DELETE':
+    include_once '../funcs/removeTodoById.php';
+    break;
   case 'PATCH':
     include_once '../funcs/modifyTodoById.php';
     break;
