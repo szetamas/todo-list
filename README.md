@@ -1,5 +1,6 @@
 <h1>todo-list</h1>
 <p>A php backend for a todo list.</p>
+<h3>todoList.sql has 'DROP TABLE list' if db already has list table with datas</h3>
 <h2>Endpoints:</h2>
 <ul>
   <li>get one todo with ID<br>
