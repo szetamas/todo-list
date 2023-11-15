@@ -8,9 +8,7 @@ switch ($method) {
     if ( isset($_GET['id']) ) {
       include_once '../funcs/getTodoById.php';
     } else {
-      http_response_code(400);
-      echo json_encode(['error' => 'wrong GET request method']);
-      break;
+      include_once '../funcs/getTodos.php';
     }
     break;
   case 'POST':
