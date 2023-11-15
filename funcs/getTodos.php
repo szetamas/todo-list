@@ -40,7 +40,7 @@ try {
   return;
 } catch(PDOException $error) {
   http_response_code(500);
-  echo json_encode(['error' => $error]);
+  echo json_encode(['error' => 'Something went wrong']);
   return;
 }
 ?>
